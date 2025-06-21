@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David | Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <script defer src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/971504158047?text=Hi%20David%2C%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20connect!" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Chat on WhatsApp">
+  <img src="{{ url_for('static', filename='icons/whatsapp.svg') }}" alt="WhatsApp">
+</a>
+
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">DAVID</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Area -->
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p style="color:aqua">&copy; {{ current_year }} David Madol Paulino Diing. All rights reserved.</p>
+  </footer>
+</body>
+</html>

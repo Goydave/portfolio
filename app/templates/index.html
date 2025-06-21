@@ -1,0 +1,283 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Hero -->
+<section id="hero" class="hero-section">
+  <div class="container hero-container">
+    <div class="hero-text">
+      <p>Hello, It's Me</p>
+      <h1>DAVID</h1>
+      <p>I am a Tech student, Who is</p>
+      <h2>Passionate in <span id="typed-text"></span></h2>
+        <p>I’m more than a student — I’m a builder. Every day, I learn, code, fail, and grow. I don’t wait to be taught — I go find what I need to know. Growth isn’t optional — it’s my lifestyle.</p>
+        <p>Tech is fast. I’m faster. While others wait for instructions, I create. While most learn to pass, I learn to build. I treat every bug, every win, every line of code like it matters — because it does.</p>
+        <p>This resume is just a preview. What matters most is what’s coming next. I’m in motion, I’m leveling up, and I’m not slowing down. Remember my name — I’m just getting started.</p>
+      <a href="/static/David_Resume.pdf" class="btn-resume" download>Resume</a>
+    </div>
+    
+    <div class="hero-img">
+      <img src="{{ url_for('static', filename='images/goy.jpg') }}" alt="David" />
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="about-section">
+  <div class="container about-container">
+    <div class="about-img">
+      <img src="{{ url_for('static', filename='images/goy.jpg') }}" alt="David" />
+    </div>
+    <div class="about-text">
+      <h2 style="color:aqua">ABOUT</h2>
+      <p>I'm David Madol — a tech enthusiast, full-stack developer, and future cybersecurity architect currently pursuing my studies at the University of Bolton, RAK..</p>
+      <p>My passion for technology isn’t just a hobby — it’s my identity. From building sleek, responsive websites to developing AI-powered tools like CortexGuard, I’m always exploring, building, and pushing the edge of what’s possible.</p>
+      <p>I’m deeply invested in software development, ethical hacking, cybersecurity, and AI innovation — not just to follow the future, but to help shape it. I’ve trained my own machine learning model, built real-world security applications, and constantly stay ahead by diving into emerging technologies that are transforming the world.</p>
+      <p>Every project I touch is a chance to solve problems, craft beautiful digital experiences, and create tools that matter.</p>
+      <p>This isn’t just a career path — it’s my mission. And I’m only getting started.</p>
+    </div>
+  </div>
+</section>
+
+<section id="achievements" class="achievements-section">
+  <h2>🏆 Achievements & Certifications</h2>
+
+  <ul class="achievement-list">
+    <li>
+      <strong>Completed 30-Day AI Prompt Engineering Challenge</strong><br>
+      Designed and deployed advanced prompts for LLMs like ChatGPT to automate tasks, generate content, and simulate complex thinking systems.
+    </li>
+
+    <li>
+      <strong>Built & Deployed 3 Full-Stack Real-World Projects (Solo)</strong><br>
+      Independently designed, coded, and launched fully functional web applications with Flask, PostgreSQL, custom UIs, and API integration.
+    </li>
+
+    <li>
+      <strong>Self-Taught Web Developer & Cybersecurity Explorer</strong><br>
+      Gained expert-level understanding of frontend & backend dev, AI integration, and ethical hacking — all through self-study, documentation, and practical building.
+    </li>
+
+    <li>
+      <strong>Mastered Deployment & Version Control</strong><br>
+      Proficient in Git/GitHub, branch management, CI/CD practices, and hosting on platforms like Render, PythonAnywhere, and GitHub Pages.
+    </li>
+
+    <li>
+      <strong>In Progress: ATHLE Level 3 at University of Bolton RAK</strong><br>
+      Formal academic track in Information Technology to deepen knowledge in computing, systems, and business tech applications.
+    </li>
+
+    <li>
+      <strong>Recognized by Peers & Mentors as a Relentless Learner</strong><br>
+      Known for pushing past limits, teaching others, and creating high-impact digital solutions — even before entering the industry professionally.
+    </li>
+  </ul>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <h2>SKILLS</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="{{ url_for('static', filename='icons/python.svg') }}" alt="Python">
+        <p>Python</p>
+      </div>
+      <div class="skill-card">
+        <img src="{{ url_for('static', filename='icons/javascript.svg') }}" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-card">
+        <img src="{{ url_for('static', filename='icons/html.svg') }}" alt="HTML5">
+        <p>HTML5</p>
+      </div>
+      <div class="skill-card">
+        <img src="{{ url_for('static', filename='icons/css.svg') }}" alt="CSS3">
+        <p>CSS3</p>
+      </div>
+      <div class="skill-card">
+        <img src="{{ url_for('static', filename='icons/flask.svg') }}" alt="Flask">
+        <p>Flask</p>
+      </div>
+      <div class="skill-card">
+        <img src="{{ url_for('static', filename='icons/sql.svg') }}" alt="SQL">
+        <p>SQL</p>
+      </div>
+      <!-- Loading placeholders -->
+    <div class="skill-card loading-skill">
+      <div class="loader"></div>
+      <p>Loading...</p>
+    </div>
+
+    <div class="skill-card loading-skill">
+      <div class="loader"></div>
+      <p>Loading...</p>
+    </div>
+
+    <div class="skill-card loading-skill">
+      <div class="loader"></div>
+      <p>Loading...</p>
+    </div>
+    <div class="skill-card loading-skill">
+      <div class="loader"></div>
+      <p>Loading...</p>
+    </div>
+
+    <div class="skill-card loading-skill">
+      <div class="loader"></div>
+      <p>Loading...</p>
+    </div>
+
+    <div class="skill-card loading-skill">
+      <div class="loader"></div>
+      <p>Loading...</p>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills-inspiration" class="skills-inspiration">
+  <p>
+    <strong>Tech never stands still — and neither do I.</strong><br>
+    In this fast-evolving digital world, mastery isn’t a destination, it’s a lifelong journey.<br>
+    Every skill I showcase today is just the foundation — the loading icons represent the future tech I’m committed to conquering tomorrow.<br>
+    I don’t just keep up with change — I chase it, study it, and adapt faster than most can imagine.<br>
+    Because in technology, if you’re not learning, you’re falling behind.<br>
+    And I’m here to lead, innovate, and redefine what’s possible — one skill at a time.
+  </p>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+  <div class="container">
+    <h2>PROJECTS</h2>
+
+    <div class="project-list">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-info">
+          <h3>CortexGuard</h3>
+          <p>AI-powered phishing detection tool with trained ML model and real-time analysis dashboard.</p>
+        </div>
+        <a href="https://github.com/Goydave/CORTEXGUARD" target="_blank">
+          <img src="{{ url_for('static', filename='icons/github.svg') }}" alt="GitHub">
+        </a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-info">
+          <h3>PortScanner</h3>
+          <p>A simple yet effective Python-based port scanner designed for educational purposes. This projects demonstrates how to use sockets in python to identify open ports on a target host. Its a great star…</p>
+        </div>
+        <a href="https://github.com/Goydave/port-scanner" target="_blank">
+          <img src="{{ url_for('static', filename='icons/github.svg') }}" alt="GitHub">
+        </a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Hospital Management System</h3>
+          <p>🌍 Nile Kings Specialist Hospital – Professional Hospital Website Description: This is a fully responsive, modern, and professional hospital website designed for Nile Kings Specialist Hospital, a le…</p>
+        </div>
+        <a href="https://github.com/Goydave/Nile-Kings-Specialist-Hospital" target="_blank">
+          <img src="{{ url_for('static', filename='icons/github.svg') }}" alt="GitHub">
+        </a>
+      </div>
+
+      <!-- Loading Project 1 -->
+      <div class="project-card loading">
+        <div class="project-info">
+          <h3>Loading Project...</h3>
+          <p>This amazing tool is under development. Come back soon 🔥</p>
+        </div>
+        <div class="loader"></div>
+      </div>
+
+      <!-- Loading Project 2 -->
+      <div class="project-card loading">
+        <div class="project-info">
+          <h3>Loading Project...(GoFlow)</h3>
+          <p>Another mind-blowing project is loading… stay tuned 😎</p>
+        </div>
+        <div class="loader"></div>
+      </div>
+      <!-- Loading Project 3 -->
+       <div class="project-card loading">
+        <div class="project-info">
+          <h3>Loading Project...</h3>
+          <p>This amazing tool is under development. Come back soon 🔥</p>
+        </div>
+        <div class="loader"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects-info" class="projects-info">
+  <p>
+    <strong>Explore My Projects</strong><br>
+    Click on the <img src="{{ url_for('static', filename='icons/github.svg') }}" alt="GitHub icon" class="github-icon">  
+    to dive straight into the heart of my work — the GitHub repository where innovation lives.<br><br>
+    
+    The <em>“loading projects...”</em> you see represent the exciting future endeavors I’m building right now —  
+    projects that will push boundaries and redefine possibilities.<br><br>
+    
+    I’m committed to constant growth, always adding new challenges and solutions that showcase my skills and vision.  
+    This is more than a portfolio — it’s a living journey of tech mastery and creative evolution.<br><br>
+    
+    So, buckle up and join me on this path — because the best is yet to come.
+  </p>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+
+    <section id="contact" class="contact-section">
+     <div class="container">
+    <h2>CONTACT</h2>
+    <p class="contact-intro">
+  I don’t just build products — I build possibilities.<br>
+  Whether it's scaling startups, writing secure code, or pushing AI boundaries, I'm all in.<br>
+  I'm passionate about solving real-world problems with smart, scalable tech.<br>
+  If you’re building the future, disrupting the norm, or chasing big ideas — let’s talk.<br>
+  I reply fast, I bring value, and I’m always ready to build something unforgettable.</p>
+    <p class="contact-intro">Let's connect and create something amazing together!</p>
+    <p>If you’re looking to collaborate, ask a question, or just say hello — I’d love to hear from you.</p>
+    
+
+    <div class="contact-details">
+      <p><strong>Email:</strong> <a href="mailto:your.email@example.com">goydave45@gmail.com</a></p>
+      <p><strong>Location:</strong> Dubai, UAE</p>
+    </div>
+    
+    <div class="contact-icons">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/david-madol-a2394634b?utm_source=share&utm_compaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+        <img src="{{ url_for('static', filename='icons/linkedin.svg') }}" alt="LinkedIn">
+      </a>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/itsgoy1" target="_blank">
+        <img src="{{ url_for('static', filename='icons/instagram.svg') }}" alt="Instagram">
+      </a>
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@dave_davi_david" target="_blank">
+        <img src="{{ url_for('static', filename='icons/tiktok.svg') }}" alt="TikTok">
+      </a>
+      <!-- Call -->
+      <a href="tel:+971504158047">
+        <img src="{{ url_for('static', filename='icons/call.svg') }}" alt="Call Me">
+      </a>
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}
