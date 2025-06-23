@@ -268,7 +268,7 @@ body {
   padding: 2.5rem 2rem;
   background: rgba(255, 255, 255, 0.05);
   color: #f4f4f4;
-  border-left: 6px solid #00f7ffaa; /* Sky blue vibe */
+  border-left: 6px solid #00f7ff; /* Sky blue vibe */
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -277,7 +277,7 @@ body {
 .achievements-section h2 {
   font-size: 1.8rem;
   margin-bottom: 1.2rem;
-  color: #00f7ffaa;
+  color: #00f7ff;
   text-align: center;
 }
 
@@ -399,6 +399,63 @@ body {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.services-section {
+  padding: 4rem 2rem;
+  background-color: #0c0c0c;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2rem;
+  color: #00f7ff;
+  margin-bottom: 1rem;
+}
+
+.section-intro {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 3rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.service-card {
+  background:rgb(4, 28, 21);
+  border: 1px solid #00f7ff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 10px 20px #00f7ff(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.service-card i {
+  font-size: 2rem;
+  color: #00f7ff;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  color: #00f7ff;
+  margin-bottom: 0.8rem;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #ccc;
 }
 
 

@@ -8,6 +8,30 @@
   <script defer src="{{ url_for('static', filename='js/main.js') }}"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- ✅ SEO Meta Tags -->
+  <meta name="title" content="David Madol Paulino Diing | Portfolio">
+  <meta name="description" content="Official portfolio of David Madol – Full Stack Developer, Ethical Hacker (in training), and AI enthusiast based in Dubai.">
+
+  <!-- ✅ Social Sharing (Open Graph) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://davidmadol.com/">
+  <meta property="og:title" content="David Madol | Full Stack Developer">
+  <meta property="og:description" content="See the projects, skills, and resume of David Madol Paulino Diing.">
+  <meta property="og:image" content="https://davidmadol.com/preview.png">
+
+  <!-- ✅ Twitter Card -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="David Madol | Full Stack Developer">
+  <meta property="twitter:description" content="Personal portfolio website of David Madol. Learn more about his projects, skills, and resume.">
+  <meta property="twitter:image" content="https://davidmadol.com/preview.png">
+
+  <!-- ✅ Favicon & Viewport -->
+  <link rel="icon" href="/static/images/fav.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Your CSS files -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
 </head>
 <body>
 <!-- WhatsApp Floating Button -->
@@ -22,10 +46,11 @@
   <!-- Navbar -->
   <header>
     <nav class="navbar">
-      <div class="logo">DAVID</div>
+      <div class="logo">DAVID MADOL</div>
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
